@@ -144,7 +144,7 @@ document.addEventListener('keydown', (e) => {
     // Skip to main content
     if (e.key === 's' && e.ctrlKey) {
         e.preventDefault();
-        document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
     }
     // Home
     if (e.key === 'h' && e.ctrlKey) {
@@ -206,34 +206,7 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// ============================================
-// NAVBAR HIDE/SHOW ON SCROLL
-// ============================================
-
-let lastScrollTop = 0;
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Only hide navbar if scrolling down significantly
-    if (scrollTop > 100) {
-        if (scrollTop > lastScrollTop) {
-            // Scrolling DOWN
-            navbar.style.opacity = '0.5';
-            navbar.style.pointerEvents = 'none';
-        } else {
-            // Scrolling UP
-            navbar.style.opacity = '1';
-            navbar.style.pointerEvents = 'auto';
-        }
-    } else {
-        navbar.style.opacity = '1';
-        navbar.style.pointerEvents = 'auto';
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
+// NAVBAR hide-on-scroll behavior removed to keep navbar fully interactive.
 
 // ============================================
 // SCROLL PROGRESS INDICATOR (OPTIONAL)
