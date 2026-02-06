@@ -831,55 +831,90 @@ section {
 
     .navbar {
         top: 20px;
-        padding: 10px 20px;
+        padding: 8px 20px;
     }
 
     .nav-container {
-        gap: 30px;
+        gap: 25px;
     }
 
     .nav-menu {
-        gap: 20px;
+        gap: 24px;
     }
 
     .nav-link {
-        font-size: 12px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .nav-logo {
+        font-size: 18px;
     }
 
     .hero {
-        padding: 100px 24px;
+        padding: 140px 24px 100px;
         min-height: 85vh;
     }
 
+    .hero-content {
+        max-width: 100%;
+    }
+
     .hero-headline {
-        font-size: 42px;
+        font-size: 44px;
+        line-height: 1.15;
+        margin-bottom: 32px;
     }
 
     .hero-subtitle {
-        font-size: 22px;
+        font-size: 24px;
+        margin-bottom: 40px;
     }
 
     .hero-description {
         font-size: 16px;
+        max-width: 100%;
+        margin-bottom: 60px;
+        line-height: 1.9;
     }
 
     .hero-cta {
         flex-direction: column;
         align-items: flex-start;
+        gap: 24px;
+    }
+
+    .sparkle {
+        margin-left: 12px;
     }
 
     section {
-        padding: 80px 0;
+        padding: 100px 0;
     }
 
     .section-title {
-        font-size: 42px;
-        margin-bottom: 60px;
+        font-size: 44px;
+        margin-bottom: 70px;
+        line-height: 1.15;
     }
 
     .about-content {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 80px;
+    }
+
+    .about-text p {
+        line-height: 1.95;
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .about-stats {
+        gap: 24px;
+    }
+
+    .stat-card {
+        padding: 32px 28px;
     }
 
     .projects-grid {
@@ -892,30 +927,89 @@ section {
 
     .project-item {
         grid-template-columns: 80px 1fr;
-        gap: 30px;
-        padding: 30px 0;
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .project-year {
+        font-size: 16px;
+    }
+
+    .project-details h4 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .project-details p {
+        font-size: 15px;
+        line-height: 1.85;
+        margin-bottom: 20px;
     }
 
     .timeline {
-        padding-left: 30px;
+        padding-left: 35px;
+        gap: 70px;
     }
 
     .timeline-marker {
-        left: -7px;
+        left: -8px;
+    }
+
+    .timeline-content {
+        padding: 28px;
+    }
+
+    .timeline-content h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 14px;
+    }
+
+    .collab-content h2 {
+        margin-bottom: 36px;
+        line-height: 1.2;
+    }
+
+    .collab-content p {
+        margin-bottom: 56px;
     }
 
     .collab-focus {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 20px;
+    }
+
+    .focus-item {
+        padding: 20px 16px;
+    }
+
+    .contact-content p {
+        font-size: 16px;
+        line-height: 1.9;
+        margin-bottom: 60px;
     }
 
     .contact-links {
-        gap: 20px;
+        gap: 24px;
+    }
+
+    .contact-link {
+        font-size: 15px;
+    }
+
+    .footer {
+        padding: 50px 0;
     }
 
     .footer-content {
         flex-direction: column;
         align-items: flex-start;
+        gap: 24px;
     }
 
     .hero-decoration {
@@ -929,60 +1023,239 @@ section {
     }
 
     .navbar {
-        display: none;
+        top: 16px;
+        padding: 6px 16px;
+    }
+
+    .nav-logo {
+        font-size: 16px;
+    }
+
+    .nav-container {
+        gap: 16px;
+    }
+
+    .nav-menu {
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        font-size: 11px;
+        font-weight: 500;
     }
 
     .hero {
-        padding: 80px 16px;
+        padding: 110px 16px 80px;
+        min-height: 90vh;
     }
 
     .hero-headline {
-        font-size: 32px;
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        letter-spacing: -1.5px;
     }
 
     .hero-subtitle {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 32px;
+        letter-spacing: -0.5px;
     }
 
     .hero-description {
         font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 50px;
+        line-height: 1.9;
+    }
+
+    .cta-button {
+        padding: 12px 28px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-link {
+        font-size: 14px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .sparkle {
+        margin-left: 8px;
+        font-size: 0.7em;
+    }
+
+    section {
+        padding: 80px 0;
     }
 
     .section-title {
-        font-size: 32px;
-        margin-bottom: 40px;
+        font-size: 36px;
+        margin-bottom: 50px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.95;
+        margin-bottom: 24px;
     }
 
     .about-stats {
-        flex-direction: row;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .stat-card {
-        padding: 20px 16px;
+        padding: 24px 20px;
     }
 
     .stat-number {
-        font-size: 28px;
+        font-size: 32px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+    }
+
+    .project-item {
+        grid-template-columns: 70px 1fr;
+        gap: 20px;
+        padding: 40px 0;
     }
 
     .project-year {
         font-size: 14px;
+        font-weight: 700;
     }
 
     .project-details h4 {
         font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .project-details p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+
+    .project-tech-list span {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .timeline {
+        padding-left: 28px;
+        gap: 50px;
+    }
+
+    .timeline-marker {
+        left: -6px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--bg-dark);
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+        line-height: 1.75;
+        margin-bottom: 10px;
+    }
+
+    .timeline-date {
+        font-size: 11px;
     }
 
     .collab-content h2 {
-        font-size: 28px;
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 28px;
+    }
+
+    .collab-content p {
+        font-size: 15px;
+        line-height: 1.85;
+        margin-bottom: 48px;
     }
 
     .collab-focus {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .focus-item {
+        padding: 16px 12px;
+        gap: 10px;
+    }
+
+    .focus-icon {
+        font-size: 12px;
+    }
+
+    .focus-item span:last-child {
+        font-size: 13px;
+    }
+
+    .contact-content p {
+        font-size: 15px;
+        line-height: 1.85;
+        margin-bottom: 48px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .contact-link {
+        font-size: 14px;
+        text-align: center;
         padding: 12px;
+        display: block;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-content p {
+        font-size: 13px;
+    }
+
+    .theme-toggle {
+        font-size: 14px;
+        padding: 6px 10px;
     }
 }
 
