@@ -2,23 +2,12 @@
    PREMIUM PORTFOLIO WEBSITE - INTERACTIONS
    ============================================ */
 
-// Dark Mode Toggle
-const themeToggle = document.getElementById('themeToggle');
-const htmlElement = document.documentElement;
+// ============================================
+// INITIAL PAGE LOAD - START AT TOP
+// ============================================
 
-// Check for saved theme preference or default to dark mode
-const currentTheme = localStorage.getItem('theme') || 'dark';
-if (currentTheme === 'light') {
-    document.body.classList.add('light-mode');
-    themeToggle.textContent = '☀️';
-}
-
-// Toggle theme
-themeToggle.addEventListener('click', () => {
-    const isLightMode = document.body.classList.toggle('light-mode');
-    const newTheme = isLightMode ? 'light' : 'dark';
-    localStorage.setItem('theme', newTheme);
-    themeToggle.textContent = isLightMode ? '☀️' : '🌙';
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
 });
 
 // ============================================
